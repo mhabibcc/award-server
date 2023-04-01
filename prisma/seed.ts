@@ -33,8 +33,8 @@ async function main() {
       update: {},
       create: {
         id: index + 1,
-        awardName: 'initial awards voucher',
-        awardImage: '',
+        awardName: 'initial awards voucher ' + index,
+        awardImage: '/img-1.jpg',
         pointExchange: 10000,
         awardType: 'Vouchers',
       },
@@ -45,8 +45,8 @@ async function main() {
       update: {},
       create: {
         id: index + 2,
-        awardName: 'initial awards gift',
-        awardImage: '',
+        awardName: 'initial awards gift ' + index,
+        awardImage: '/img-2.jpg',
         pointExchange: 15000,
         awardType: 'Giftcard',
       },
@@ -57,8 +57,8 @@ async function main() {
       update: {},
       create: {
         id: index + 3,
-        awardName: 'initial awards products',
-        awardImage: '',
+        awardName: 'initial awards products ' + index,
+        awardImage: '/img-3.jpg',
         pointExchange: 25000,
         awardType: 'Products',
       },

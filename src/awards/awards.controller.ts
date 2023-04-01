@@ -13,7 +13,7 @@ export class AwardsController {
       AwardsDto.cursor = 0;
     }
     if (AwardsDto.point == null) {
-      AwardsDto.point = 0;
+      AwardsDto.point = 500000;
     }
     if (AwardsDto.type == null || AwardsDto.type == '') {
       AwardsDto.type = 'Vouchers,Products,Giftcard';

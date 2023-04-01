@@ -15,7 +15,7 @@ export class AwardsService {
       },
       where: {
         pointExchange: {
-          gte: Number(awardsDto.point),
+          lte: Number(awardsDto.point),
         },
         awardType: {
           in: [...types],

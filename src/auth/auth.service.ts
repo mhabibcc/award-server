@@ -1,5 +1,6 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
+import { error } from 'console';
 import { UsersService } from 'src/users/users.service';
 
 @Injectable()
@@ -10,6 +11,9 @@ export class AuthService {
   ) {}
 
   async login(email: string) {
+    if (email == undefined) {
+      throw new UnauthorizedException();
+    }
     const user = await this.userService.findByEmail(email);
     if (user == null) {
       throw new UnauthorizedException();
